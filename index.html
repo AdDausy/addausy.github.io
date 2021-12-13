@@ -502,6 +502,9 @@
 			$(window).on('load',function(){
 				$('.preload').css('background','#00000000').css('color','#FFFFFF00').css('backdrop-filter','blur(0px)').text('SELESAI').css('z-index','-2');
 			});
+			function init(){
+				startTime();
+				stopOpening();
 	  			$('body').append(add);
 	  			if(localStorage.getItem("nama") != null && localStorage.getItem("checked") == "yoi"){
 		  			namaku=localStorage.getItem("nama");
